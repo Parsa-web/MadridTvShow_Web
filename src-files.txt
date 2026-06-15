@@ -1,0 +1,210 @@
+ Volume in drive D is New Volume
+ Volume Serial Number is 3238-0902
+
+ Directory of D:\farbod\web_projects\react\MadridTvShow_Web\src
+
+06/15/2026  05:07 PM    <DIR>          .
+06/15/2026  05:07 PM    <DIR>          ..
+06/15/2026  05:38 PM             9,918 App.css
+06/15/2026  05:07 PM             1,412 App.jsx
+06/15/2026  04:14 PM    <DIR>          assets
+06/15/2026  09:05 AM    <DIR>          components
+06/15/2026  04:49 PM               643 const.ts
+06/15/2026  09:05 AM    <DIR>          contexts
+06/15/2026  09:05 AM    <DIR>          hooks
+06/15/2026  05:07 PM    <DIR>          i18n
+01/01/1980  12:00 AM             5,845 index.css
+06/15/2026  09:05 AM    <DIR>          lib
+01/01/1980  12:00 AM               233 main.jsx
+               5 File(s)         18,051 bytes
+
+ Directory of D:\farbod\web_projects\react\MadridTvShow_Web\src\assets
+
+06/15/2026  04:14 PM    <DIR>          .
+06/15/2026  04:14 PM    <DIR>          ..
+06/15/2026  03:24 PM    <DIR>          hero
+06/15/2026  04:45 PM    <DIR>          logo
+06/15/2026  03:52 PM    <DIR>          news
+06/15/2026  04:12 PM    <DIR>          players
+06/15/2026  04:36 PM    <DIR>          videos
+               0 File(s)              0 bytes
+
+ Directory of D:\farbod\web_projects\react\MadridTvShow_Web\src\assets\hero
+
+06/15/2026  03:24 PM    <DIR>          .
+06/15/2026  03:24 PM    <DIR>          ..
+06/15/2026  03:24 PM         2,612,987 s.jpg
+               1 File(s)      2,612,987 bytes
+
+ Directory of D:\farbod\web_projects\react\MadridTvShow_Web\src\assets\logo
+
+06/15/2026  04:45 PM    <DIR>          .
+06/15/2026  04:45 PM    <DIR>          ..
+06/13/2026  11:41 AM           121,315 5922283851760125932.jpg
+06/15/2026  04:45 PM             6,441 manchester.png
+06/15/2026  04:44 PM             5,382 real madrid.png
+               3 File(s)        133,138 bytes
+
+ Directory of D:\farbod\web_projects\react\MadridTvShow_Web\src\assets\news
+
+06/15/2026  03:52 PM    <DIR>          .
+06/15/2026  03:52 PM    <DIR>          ..
+06/15/2026  03:50 PM           173,365 Club Restructuring Continues After Trophyless Season.jpg
+06/15/2026  03:34 PM             5,923 felorentino.jfif
+06/15/2026  03:45 PM            38,783 jose2.jpg
+06/15/2026  03:36 PM         2,318,087 jude.jpeg
+06/15/2026  03:33 PM            27,060 juse.webp
+06/15/2026  03:32 PM            11,009 marc.jfif
+06/15/2026  03:52 PM            14,062 Real Madrid Castilla Eliminated From Promotion Playoffs.jfif
+06/15/2026  03:34 PM           114,188 santiago.webp
+06/15/2026  03:35 PM           199,629 training.jpg
+06/15/2026  03:49 PM           140,724 transfer.webp
+06/15/2026  03:47 PM           173,953 vitinha.jpg
+              11 File(s)      3,216,783 bytes
+
+ Directory of D:\farbod\web_projects\react\MadridTvShow_Web\src\assets\players
+
+06/15/2026  04:12 PM    <DIR>          .
+06/15/2026  04:12 PM    <DIR>          ..
+06/15/2026  02:55 PM         3,295,902 belingham.png
+06/15/2026  02:56 PM         4,245,411 mbappe.png
+06/15/2026  02:55 PM         2,949,673 vini.png
+               3 File(s)     10,490,986 bytes
+
+ Directory of D:\farbod\web_projects\react\MadridTvShow_Web\src\assets\videos
+
+06/15/2026  04:36 PM    <DIR>          .
+06/15/2026  04:36 PM    <DIR>          ..
+06/15/2026  04:23 PM           325,977 bernardo.jpg
+06/15/2026  04:27 PM           253,094 bombshell.jpg
+06/15/2026  04:24 PM           274,788 cucurella.jpg
+06/15/2026  04:28 PM           285,428 florentino.jpg
+06/15/2026  04:27 PM           296,661 julian.jpg
+06/15/2026  04:26 PM           212,319 mourinho.jpg
+               6 File(s)      1,648,267 bytes
+
+ Directory of D:\farbod\web_projects\react\MadridTvShow_Web\src\components
+
+06/15/2026  09:05 AM    <DIR>          .
+06/15/2026  09:05 AM    <DIR>          ..
+06/15/2026  05:02 PM             3,975 BreakingNews.css
+06/15/2026  05:37 PM             2,851 BreakingNews.jsx
+01/01/1980  12:00 AM             1,688 ErrorBoundary.tsx
+06/15/2026  04:54 PM             4,948 FanZone.css
+06/15/2026  05:32 PM             4,167 FanZone.jsx
+06/15/2026  05:03 PM             4,025 Footer.css
+06/15/2026  05:10 PM             2,924 Footer.jsx
+06/15/2026  05:25 PM             2,203 Hero.css
+06/15/2026  05:08 PM               945 Hero.jsx
+06/15/2026  04:53 PM             4,132 LeagueTable.css
+06/15/2026  05:09 PM             2,470 LeagueTable.jsx
+01/01/1980  12:00 AM             2,370 ManusDialog.tsx
+01/01/1980  12:00 AM             4,932 Map.tsx
+06/15/2026  06:12 PM             9,198 MatchCenter.css
+06/15/2026  06:01 PM             6,551 MatchCenter.jsx
+06/15/2026  05:11 PM             6,837 Navbar.css
+06/15/2026  05:31 PM             3,821 Navbar.jsx
+06/15/2026  04:53 PM             4,446 NewsGrid.css
+06/15/2026  05:52 PM             4,512 NewsGrid.jsx
+06/15/2026  04:54 PM             4,747 PlayerSpotlight.css
+06/15/2026  05:31 PM             3,320 PlayerSpotlight.jsx
+06/15/2026  05:02 PM             3,825 TransferCenter.css
+06/15/2026  05:09 PM             3,301 TransferCenter.jsx
+06/15/2026  09:05 AM    <DIR>          ui
+06/15/2026  04:53 PM             3,213 VideoSection.css
+06/15/2026  05:16 PM             2,497 VideoSection.jsx
+              25 File(s)         97,898 bytes
+
+ Directory of D:\farbod\web_projects\react\MadridTvShow_Web\src\components\ui
+
+06/15/2026  09:05 AM    <DIR>          .
+06/15/2026  09:05 AM    <DIR>          ..
+01/01/1980  12:00 AM             2,048 accordion.tsx
+01/01/1980  12:00 AM             3,866 alert-dialog.tsx
+01/01/1980  12:00 AM             1,622 alert.tsx
+01/01/1980  12:00 AM               269 aspect-ratio.tsx
+01/01/1980  12:00 AM             1,090 avatar.tsx
+01/01/1980  12:00 AM             1,639 badge.tsx
+01/01/1980  12:00 AM             2,371 breadcrumb.tsx
+01/01/1980  12:00 AM             2,220 button-group.tsx
+01/01/1980  12:00 AM             2,097 button.tsx
+01/01/1980  12:00 AM             7,663 calendar.tsx
+01/01/1980  12:00 AM             1,997 card.tsx
+01/01/1980  12:00 AM             5,603 carousel.tsx
+01/01/1980  12:00 AM            10,113 chart.tsx
+01/01/1980  12:00 AM             1,218 checkbox.tsx
+01/01/1980  12:00 AM               791 collapsible.tsx
+01/01/1980  12:00 AM             4,838 command.tsx
+01/01/1980  12:00 AM             8,284 context-menu.tsx
+01/01/1980  12:00 AM             6,024 dialog.tsx
+01/01/1980  12:00 AM             4,255 drawer.tsx
+01/01/1980  12:00 AM             8,434 dropdown-menu.tsx
+01/01/1980  12:00 AM             2,406 empty.tsx
+01/01/1980  12:00 AM             6,057 field.tsx
+01/01/1980  12:00 AM             3,801 form.tsx
+01/01/1980  12:00 AM             1,525 hover-card.tsx
+01/01/1980  12:00 AM             5,066 input-group.tsx
+01/01/1980  12:00 AM             2,253 input-otp.tsx
+01/01/1980  12:00 AM             2,728 input.tsx
+01/01/1980  12:00 AM             4,513 item.tsx
+01/01/1980  12:00 AM               866 kbd.tsx
+01/01/1980  12:00 AM               602 label.tsx
+01/01/1980  12:00 AM             8,405 menubar.tsx
+01/01/1980  12:00 AM             6,680 navigation-menu.tsx
+01/01/1980  12:00 AM             2,726 pagination.tsx
+01/01/1980  12:00 AM             1,629 popover.tsx
+01/01/1980  12:00 AM               731 progress.tsx
+01/01/1980  12:00 AM             1,459 radio-group.tsx
+01/01/1980  12:00 AM             2,023 resizable.tsx
+01/01/1980  12:00 AM             1,637 scroll-area.tsx
+01/01/1980  12:00 AM             6,297 select.tsx
+01/01/1980  12:00 AM               690 separator.tsx
+01/01/1980  12:00 AM             4,107 sheet.tsx
+01/01/1980  12:00 AM            21,947 sidebar.tsx
+01/01/1980  12:00 AM               279 skeleton.tsx
+01/01/1980  12:00 AM             1,988 slider.tsx
+01/01/1980  12:00 AM               561 sonner.tsx
+01/01/1980  12:00 AM               335 spinner.tsx
+01/01/1980  12:00 AM             1,168 switch.tsx
+01/01/1980  12:00 AM             2,445 table.tsx
+01/01/1980  12:00 AM             1,963 tabs.tsx
+01/01/1980  12:00 AM             2,613 textarea.tsx
+01/01/1980  12:00 AM             1,936 toggle-group.tsx
+01/01/1980  12:00 AM             1,563 toggle.tsx
+01/01/1980  12:00 AM             1,886 tooltip.tsx
+              53 File(s)        181,327 bytes
+
+ Directory of D:\farbod\web_projects\react\MadridTvShow_Web\src\contexts
+
+06/15/2026  09:05 AM    <DIR>          .
+06/15/2026  09:05 AM    <DIR>          ..
+01/01/1980  12:00 AM             1,467 ThemeContext.tsx
+               1 File(s)          1,467 bytes
+
+ Directory of D:\farbod\web_projects\react\MadridTvShow_Web\src\hooks
+
+06/15/2026  09:05 AM    <DIR>          .
+06/15/2026  09:05 AM    <DIR>          ..
+01/01/1980  12:00 AM             2,333 useComposition.ts
+01/01/1980  12:00 AM               584 useMobile.tsx
+01/01/1980  12:00 AM               471 usePersistFn.ts
+               3 File(s)          3,388 bytes
+
+ Directory of D:\farbod\web_projects\react\MadridTvShow_Web\src\i18n
+
+06/15/2026  05:07 PM    <DIR>          .
+06/15/2026  05:07 PM    <DIR>          ..
+06/15/2026  05:07 PM             1,008 LanguageContext.jsx
+06/15/2026  05:51 PM            14,617 translations.js
+               2 File(s)         15,625 bytes
+
+ Directory of D:\farbod\web_projects\react\MadridTvShow_Web\src\lib
+
+06/15/2026  09:05 AM    <DIR>          .
+06/15/2026  09:05 AM    <DIR>          ..
+01/01/1980  12:00 AM               169 utils.ts
+               1 File(s)            169 bytes
+
+     Total Files Listed:
+             114 File(s)     18,420,086 bytes
+              38 Dir(s)  118,911,950,848 bytes free

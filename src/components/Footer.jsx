@@ -1,5 +1,6 @@
 import { useLanguage } from '../i18n/LanguageContext';
 import './Footer.css';
+import logoSrc from '../assets/logo.jpg';
 
 function Footer() {
   const { t } = useLanguage();
@@ -80,7 +81,7 @@ function Footer() {
         {/* Logo Watermark */}
         <div className="footer-logo-section">
           <img 
-            src="/logo.jpg" 
+            src={logoSrc} 
             alt="Madrid TV Show" 
             className="footer-logo"
           />
