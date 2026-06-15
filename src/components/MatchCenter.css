@@ -401,6 +401,56 @@
   }
 }
 
+@media (max-width: 480px) {
+  .live-card {
+    padding: 0.5rem 0.75rem;
+    gap: 0.15rem;
+    border-radius: var(--radius-md);
+  }
+
+  .live-badge {
+    width: 28px;
+    height: 28px;
+    padding: 2px;
+  }
+
+  .live-team-name {
+    font-size: 0.75rem;
+  }
+
+  .live-score-num {
+    font-size: 1.2rem;
+  }
+
+  .live-score-colon {
+    font-size: 0.7rem;
+  }
+
+  .live-watch-btn {
+    font-size: 0.65rem;
+    padding: 0.2rem 0.6rem;
+  }
+
+  .match-item {
+    padding: var(--spacing-xs) var(--spacing-sm);
+  }
+
+  .match-teams-text {
+    font-size: 0.8rem;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .result-score {
+    font-size: 0.8rem;
+    padding: 0.15rem 0.5rem;
+  }
+
+  .column-title {
+    font-size: 0.85rem;
+  }
+}
+
 @media (max-width: 640px) {
   .live-card {
     padding: 0.6rem 1rem;
