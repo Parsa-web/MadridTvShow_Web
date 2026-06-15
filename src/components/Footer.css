@@ -1,0 +1,207 @@
+/* ============================================
+   FOOTER - Royal Crest Heritage Design
+   Newsletter, links, and logo watermark
+   ============================================ */
+
+.footer {
+  background-color: var(--bg);
+  border-top: var(--section-border);
+  margin-top: 0;
+  padding-top: var(--spacing-2xl);
+}
+
+.footer-content {
+  padding: var(--spacing-2xl) 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-2xl);
+}
+
+/* ============================================
+   NEWSLETTER SECTION
+   ============================================ */
+
+.footer-newsletter {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-xl);
+  text-align: center;
+}
+
+.footer-newsletter h3 {
+  font-size: 1.5rem;
+  margin-bottom: var(--spacing-sm);
+  color: var(--text);
+}
+
+.footer-newsletter p {
+  color: var(--muted);
+  margin-bottom: var(--spacing-lg);
+}
+
+.newsletter-form {
+  display: flex;
+  gap: var(--spacing-md);
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.newsletter-input {
+  flex: 1;
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 0.75rem 1rem;
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  transition: all var(--transition-fast);
+}
+
+.newsletter-input::placeholder {
+  color: var(--muted);
+}
+
+.newsletter-input:focus {
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.08);
+  border-color: var(--gold);
+  box-shadow: 0 0 12px rgba(255, 215, 0, 0.2);
+}
+
+/* ============================================
+   FOOTER LINKS GRID
+   ============================================ */
+
+.footer-links-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--spacing-xl);
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.footer-section-title {
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text);
+  margin-bottom: var(--spacing-sm);
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.footer-links a {
+  color: var(--muted);
+  font-size: 0.9rem;
+  transition: all var(--transition-fast);
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: var(--gold);
+  transform: translateX(4px);
+}
+
+/* ============================================
+   LOGO WATERMARK
+   ============================================ */
+
+.footer-logo-section {
+  display: flex;
+  justify-content: center;
+  padding: var(--spacing-xl) 0;
+  border-top: var(--section-border);
+  border-bottom: var(--section-border);
+}
+
+.footer-logo {
+  height: 60px;
+  width: auto;
+  object-fit: contain;
+  opacity: 0.3;
+  transition: opacity var(--transition-fast);
+}
+
+.footer-logo:hover {
+  opacity: 0.5;
+}
+
+/* ============================================
+   FOOTER BOTTOM
+   ============================================ */
+
+.footer-bottom {
+  background-color: rgba(0, 0, 0, 0.15);
+  border-top: var(--section-border);
+  padding: var(--spacing-lg) 0;
+}
+
+.footer-copyright {
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin: 0;
+}
+
+/* ============================================
+   RESPONSIVE DESIGN
+   ============================================ */
+
+@media (max-width: 1024px) {
+  .footer-links-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-lg);
+  }
+  
+  .newsletter-form {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 640px) {
+  .footer-content {
+    padding: var(--spacing-xl) 0;
+    gap: var(--spacing-xl);
+  }
+  
+  .footer-newsletter {
+    padding: var(--spacing-lg);
+  }
+  
+  .footer-newsletter h3 {
+    font-size: 1.25rem;
+  }
+  
+  .footer-links-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-md);
+  }
+  
+  .footer-section-title {
+    font-size: 0.9rem;
+  }
+  
+  .footer-links a {
+    font-size: 0.85rem;
+  }
+  
+  .footer-logo {
+    height: 50px;
+  }
+  
+  .footer-copyright {
+    font-size: 0.8rem;
+  }
+}

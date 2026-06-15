@@ -1,0 +1,381 @@
+/* ============================================
+   NAVBAR - Royal Crest Heritage Design
+   Sticky top navbar with glass blur background
+   ============================================ */
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: var(--z-navbar);
+  background-color: var(--navbar-bg);
+  backdrop-filter: blur(4px);
+  border-bottom: var(--section-border);
+  transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
+  padding: 0.75rem 0;
+}
+
+.navbar.scrolled {
+  background-color: var(--card);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 16px var(--shadow);
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--spacing-lg);
+}
+
+/* ============================================
+   LOGO
+   ============================================ */
+
+.navbar-logo {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+}
+
+.logo-image {
+  height: 44px;
+  width: auto;
+  object-fit: contain;
+  transition: transform var(--transition-fast);
+  display: block;
+}
+
+.logo-image:hover {
+  transform: scale(1.05);
+}
+
+/* ============================================
+   DESKTOP NAVIGATION LINKS
+   ============================================ */
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  flex: 1;
+  justify-content: center;
+  align-self: stretch;
+}
+
+.nav-link {
+  position: relative;
+  color: var(--text);
+  font-size: 0.95rem;
+  font-weight: 500;
+  padding: 0.35rem 0;
+  transition: color var(--transition-fast);
+  display: flex;
+  align-items: center;
+  height: 100%;
+  line-height: 1.2;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--gold);
+  transition: width var(--transition-normal);
+}
+
+.nav-link:hover {
+  color: var(--gold);
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* ============================================
+   RIGHT SECTION
+   ============================================ */
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  flex-shrink: 0;
+  align-self: stretch;
+}
+
+/* Search Container */
+.search-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 215, 0, 0.2);
+  border-radius: var(--radius-md);
+  padding: 0.35rem 1rem 0.35rem 2.5rem;
+  color: var(--text);
+  font-size: 0.9rem;
+  width: 200px;
+  transition: all var(--transition-fast);
+  line-height: 1.5;
+}
+
+.search-input::placeholder {
+  color: var(--muted);
+}
+
+.search-input:focus {
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.08);
+  border-color: var(--gold);
+  box-shadow: 0 0 12px rgba(255, 215, 0, 0.2);
+}
+
+.search-icon {
+  position: absolute;
+  left: 0.75rem;
+  width: 18px;
+  height: 18px;
+  color: var(--muted);
+  pointer-events: none;
+}
+
+/* Language Toggle */
+.lang-toggle {
+  background: none;
+  border: 1px solid var(--border);
+  color: var(--gold);
+  font-size: 0.7rem;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 0.15rem 0.45rem;
+  border-radius: var(--radius-sm);
+  transition: all var(--transition-fast);
+  font-family: var(--font-body);
+  letter-spacing: 0.02em;
+  line-height: 1.4;
+}
+
+.lang-toggle:hover {
+  background-color: rgba(255, 215, 0, 0.1);
+  border-color: var(--gold);
+}
+
+/* Dark Mode Toggle */
+.dark-mode-toggle {
+  background: none;
+  border: none;
+  color: var(--text);
+  font-size: 1.25rem;
+  cursor: pointer;
+  padding: 0.4rem;
+  transition: transform var(--transition-fast);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+
+.dark-mode-toggle:hover {
+  transform: scale(1.1);
+}
+
+.theme-icon {
+  width: 20px;
+  height: 20px;
+}
+
+/* User Icon */
+.user-icon {
+  background: none;
+  border: none;
+  color: var(--text);
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  border-radius: var(--radius-md);
+  padding: 0;
+}
+
+.user-icon:hover {
+  background-color: rgba(255, 215, 0, 0.1);
+  color: var(--gold);
+}
+
+.user-icon svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* ============================================
+   MOBILE MENU TOGGLE
+   ============================================ */
+
+.mobile-menu-toggle {
+  background: none;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  padding: 0.4rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.mobile-menu-toggle span {
+  width: 24px;
+  height: 2px;
+  background-color: var(--text);
+  transition: all var(--transition-fast);
+  border-radius: 1px;
+}
+
+.mobile-menu-toggle:hover span {
+  background-color: var(--gold);
+}
+
+/* ============================================
+   MOBILE MENU
+   ============================================ */
+
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  padding: var(--spacing-md);
+  background-color: var(--card);
+  border-top: 1px solid var(--border);
+  animation: slideDown var(--transition-normal);
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.mobile-nav-link {
+  color: var(--text);
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid rgba(255, 215, 0, 0.1);
+  transition: color var(--transition-fast);
+}
+
+.mobile-nav-link:hover {
+  color: var(--gold);
+}
+
+.mobile-search-container {
+  margin-top: var(--spacing-sm);
+}
+
+.mobile-search-container .search-input {
+  width: 100%;
+}
+
+/* ============================================
+   RESPONSIVE DESIGN
+   ============================================ */
+
+@media (max-width: 1024px) {
+  .navbar-links {
+    gap: var(--spacing-sm);
+  }
+  
+  .nav-link {
+    font-size: 0.85rem;
+  }
+  
+  .search-input {
+    width: 150px;
+  }
+}
+
+@media (max-width: 768px) {
+  .desktop-only {
+    display: none !important;
+  }
+  
+  .mobile-only {
+    display: flex !important;
+  }
+  
+  .navbar-container {
+    gap: var(--spacing-md);
+  }
+  
+  .navbar-right {
+    gap: var(--spacing-sm);
+  }
+  
+  .mobile-menu {
+    display: flex;
+  }
+  
+  .navbar {
+    padding: 0.5rem 0;
+    min-height: 60px;
+  }
+}
+
+@media (max-width: 640px) {
+  .navbar {
+    padding: 0.75rem 0;
+  }
+  
+  .logo-image {
+    height: 40px;
+  }
+  
+  .navbar-right {
+    gap: 0.5rem;
+  }
+  
+  .lang-toggle {
+    font-size: 0.65rem;
+    padding: 0.1rem 0.35rem;
+  }
+
+  .dark-mode-toggle,
+  .user-icon {
+    font-size: 1rem;
+    width: 28px;
+    height: 28px;
+  }
+  
+  .mobile-menu {
+    padding: var(--spacing-sm);
+    gap: var(--spacing-sm);
+  }
+  
+  .mobile-nav-link {
+    font-size: 0.9rem;
+    padding: 0.5rem 0;
+  }
+}
+
+/* Hide desktop elements on mobile */
+.desktop-only {
+  display: flex;
+}
+
+.mobile-only {
+  display: none;
+}

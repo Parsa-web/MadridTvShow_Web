@@ -1,0 +1,228 @@
+/* ============================================
+   PLAYER SPOTLIGHT - Royal Crest Heritage Design
+   Hero-style player cards with stats overlay
+   ============================================ */
+
+.player-spotlight {
+  background: var(--bg-soft);
+  border-top: 1px solid var(--border);
+}
+
+.players-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-lg);
+}
+
+/* ============================================
+   PLAYER CARD
+   ============================================ */
+
+.player-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-md);
+  transition: all var(--transition-normal);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.player-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at top right, rgba(255, 215, 0, 0.1) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.player-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(255, 215, 0, 0.3);
+  box-shadow: 0 12px 32px rgba(255, 215, 0, 0.15);
+}
+
+.featured-badge {
+  position: absolute;
+  top: var(--spacing-md);
+  right: var(--spacing-md);
+  background-color: var(--gold);
+  color: var(--bg);
+  padding: 0.25rem 0.75rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  z-index: 10;
+}
+
+/* ============================================
+   PLAYER HEADER
+   ============================================ */
+
+.player-header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: var(--spacing-md);
+}
+
+.player-number {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 3rem;
+  font-weight: 800;
+  color: rgba(255, 215, 0, 0.1);
+  line-height: 1;
+  z-index: 1;
+}
+
+.player-avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid var(--gold);
+  position: relative;
+  z-index: 5;
+  object-fit: cover;
+  object-position: center 25%;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  -ms-interpolation-mode: bicubic;
+  will-change: transform;
+  transform: translateZ(0);
+  box-shadow: 0 0 24px rgba(255, 215, 0, 0.2);
+}
+
+/* ============================================
+   PLAYER INFO
+   ============================================ */
+
+.player-info {
+  text-align: center;
+  margin-bottom: var(--spacing-md);
+}
+
+.player-name {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: var(--text);
+  margin-bottom: 0.25rem;
+}
+
+.player-position {
+  font-size: 0.85rem;
+  color: var(--gold);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* ============================================
+   PLAYER STATS
+   ============================================ */
+
+.player-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--spacing-sm);
+  margin-bottom: var(--spacing-md);
+  padding: var(--spacing-sm);
+  background-color: var(--surface);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.stat-value {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: var(--gold);
+}
+
+.stat-label {
+  font-size: 0.7rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+}
+
+/* ============================================
+   BEST PERFORMER BADGE
+   ============================================ */
+
+.best-performer {
+  background: linear-gradient(135deg, var(--gold) 0%, #FFE066 100%);
+  color: var(--bg);
+  padding: 0.5rem;
+  border-radius: var(--radius-md);
+  text-align: center;
+  font-weight: 700;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  box-shadow: 0 4px 12px rgba(255, 215, 0, 0.3);
+}
+
+/* ============================================
+   FEATURED PLAYER CARD
+   ============================================ */
+
+.player-card.featured {
+  grid-column: span 1;
+}
+
+/* ============================================
+   RESPONSIVE DESIGN
+   ============================================ */
+
+@media (max-width: 1024px) {
+  .players-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .players-grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+  }
+  
+  .player-card {
+    padding: var(--spacing-md);
+  }
+  
+  .player-number {
+    font-size: 3rem;
+  }
+  
+  .player-avatar {
+    width: 130px;
+    height: 130px;
+  }
+  
+  .player-name {
+    font-size: 1.25rem;
+  }
+  
+  .player-stats {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-sm);
+    padding: var(--spacing-sm);
+  }
+  
+  .stat-value {
+    font-size: 1.1rem;
+  }
+}

@@ -1,0 +1,258 @@
+/* ============================================
+   FAN ZONE - Royal Crest Heritage Design
+   Poll UI and comment cards with reactions
+   ============================================ */
+
+.fan-zone {
+  background: var(--bg-soft);
+  border-top: 1px solid var(--border);
+}
+
+.fan-zone-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-2xl);
+}
+
+.fan-zone-column {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ============================================
+   POLL CARD
+   ============================================ */
+
+.poll-card {
+  background-color: var(--card);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-lg);
+  border: 1px solid var(--border);
+  box-shadow: 0 4px 12px var(--shadow);
+}
+
+.poll-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: var(--spacing-lg);
+}
+
+.poll-options {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
+}
+
+/* ============================================
+   POLL OPTION
+   ============================================ */
+
+.poll-option {
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  padding: var(--spacing-md);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+  background-color: var(--card);
+}
+
+.poll-option:hover {
+  background-color: var(--surface);
+  border-color: rgba(255, 215, 0, 0.2);
+}
+
+.option-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.option-text {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.option-percentage {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--gold);
+}
+
+.option-bar {
+  height: 8px;
+  background-color: var(--surface);
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+  border: 1px solid var(--border);
+}
+
+.option-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--blue) 0%, var(--gold) 100%);
+  border-radius: 4px;
+  transition: width var(--transition-slow);
+  box-shadow: 0 0 8px rgba(255, 215, 0, 0.3);
+}
+
+.option-votes {
+  font-size: 0.8rem;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+/* ============================================
+   COMMENTS SECTION
+   ============================================ */
+
+.comments-section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+.comments-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: var(--spacing-md);
+}
+
+.comments-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+/* ============================================
+   COMMENT CARD
+   ============================================ */
+
+.comment-card {
+  background-color: var(--card);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-lg);
+  border: 1px solid var(--border);
+  transition: all var(--transition-normal);
+}
+
+.comment-card:hover {
+  border-color: rgba(255, 215, 0, 0.2);
+  box-shadow: 0 4px 12px var(--shadow);
+}
+
+.comment-header {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-md);
+}
+
+.comment-avatar {
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(135deg, var(--blue) 0%, var(--gold) 100%);
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.comment-author {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.comment-text {
+  font-size: 0.95rem;
+  color: var(--muted);
+  line-height: 1.5;
+  margin-bottom: var(--spacing-md);
+}
+
+/* ============================================
+   COMMENT REACTIONS
+   ============================================ */
+
+.comment-reactions {
+  display: flex;
+  gap: var(--spacing-sm);
+  flex-wrap: wrap;
+}
+
+.reaction-button {
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 0.4rem 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  font-family: var(--font-body);
+  color: var(--text);
+}
+
+.reaction-button:hover {
+  background-color: rgba(255, 215, 0, 0.1);
+  border-color: rgba(255, 215, 0, 0.3);
+  transform: scale(1.05);
+}
+
+.emoji {
+  font-size: 1rem;
+}
+
+.count {
+  font-size: 0.8rem;
+  color: var(--muted);
+  font-weight: 600;
+}
+
+/* ============================================
+   RESPONSIVE DESIGN
+   ============================================ */
+
+@media (max-width: 1024px) {
+  .fan-zone-grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-xl);
+  }
+}
+
+@media (max-width: 640px) {
+  .poll-card,
+  .comment-card {
+    padding: var(--spacing-md);
+  }
+  
+  .poll-title,
+  .comments-title {
+    font-size: 1.1rem;
+  }
+  
+  .poll-option {
+    padding: var(--spacing-sm);
+  }
+  
+  .option-text {
+    font-size: 0.9rem;
+  }
+  
+  .comment-text {
+    font-size: 0.9rem;
+  }
+  
+  .comment-reactions {
+    gap: 0.5rem;
+  }
+  
+  .reaction-button {
+    padding: 0.3rem 0.6rem;
+    font-size: 0.85rem;
+  }
+}
