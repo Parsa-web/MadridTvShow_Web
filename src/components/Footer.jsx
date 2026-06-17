@@ -1,8 +1,9 @@
 import { useLanguage } from '../i18n/LanguageContext';
 import './Footer.css';
-import logoSrc from '../assets/logo.jpg';
+import logoSrcDark from '../assets/logo1.png';
+import logoSrcLight from '../assets/logo2.png';
 
-function Footer() {
+function Footer({ darkMode }) {
   const { t } = useLanguage();
   const currentYear = new Date().getFullYear();
 
@@ -81,8 +82,8 @@ function Footer() {
         {/* Logo Watermark */}
         <div className="footer-logo-section">
           <img 
-            src={logoSrc} 
-            alt="Madrid TV Show" 
+            src={darkMode ? logoSrcDark : logoSrcLight} 
+            alt="Madridista TV" 
             className="footer-logo"
           />
         </div>

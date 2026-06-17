@@ -65,10 +65,38 @@
   animation: fadeInUp 0.8s ease-out 0.1s both;
 }
 
+.dark-mode .hero-subtitle {
+  color: #C8C8C8;
+}
+
+.light-mode .hero-subtitle {
+  color: #2A2A2A;
+}
+
 .hero-buttons {
   display: flex;
   gap: var(--spacing-md);
   animation: fadeInUp 0.8s ease-out 0.2s both;
+}
+
+/* Light mode: text outline for readability */
+.light-mode .hero-title {
+  text-shadow:
+    -1px -1px 0 rgba(255, 255, 255, 0.9),
+     1px -1px 0 rgba(255, 255, 255, 0.9),
+    -1px  1px 0 rgba(255, 255, 255, 0.9),
+     1px  1px 0 rgba(255, 255, 255, 0.9),
+     0 0 20px rgba(255, 255, 255, 0.6),
+     0 0 40px rgba(255, 255, 255, 0.3);
+}
+
+.light-mode .hero-subtitle {
+  text-shadow:
+    -1px -1px 0 rgba(255, 255, 255, 0.85),
+     1px -1px 0 rgba(255, 255, 255, 0.85),
+    -1px  1px 0 rgba(255, 255, 255, 0.85),
+     1px  1px 0 rgba(255, 255, 255, 0.85),
+     0 0 12px rgba(255, 255, 255, 0.5);
 }
 
 @keyframes fadeInUp {

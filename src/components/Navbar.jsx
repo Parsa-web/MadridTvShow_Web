@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react';
 import { useLanguage } from '../i18n/LanguageContext';
 import './Navbar.css';
-import logoSrc from '../assets/logo.jpg';
+import logoSrcDark from '../assets/logo1.png';
+import logoSrcLight from '../assets/logo2.png';
 
 function Navbar({ darkMode, setDarkMode }) {
   const { t, toggleLang, locale } = useLanguage();
@@ -29,8 +30,8 @@ function Navbar({ darkMode, setDarkMode }) {
         {/* Logo */}
         <div className="navbar-logo">
           <img 
-            src={logoSrc} 
-            alt="Madrid TV Show" 
+            src={darkMode ? logoSrcDark : logoSrcLight} 
+            alt="Madridista TV" 
             className="logo-image"
           />
         </div>

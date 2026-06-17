@@ -127,7 +127,7 @@
 }
 
 .footer-logo {
-  height: 60px;
+  height: 72px;
   width: auto;
   object-fit: contain;
   opacity: 0.3;
@@ -198,7 +198,7 @@
   }
   
   .footer-logo {
-    height: 50px;
+    height: 60px;
   }
   
   .footer-copyright {

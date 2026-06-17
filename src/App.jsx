@@ -36,7 +36,7 @@ function App() {
           <LeagueTable />
           <FanZone />
         </main>
-        <Footer />
+        <Footer darkMode={darkMode} />
       </div>
     </LanguageProvider>
   );

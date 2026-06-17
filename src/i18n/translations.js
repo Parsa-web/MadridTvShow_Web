@@ -1,5 +1,5 @@
 export const en = {
-  'nav.logo': 'MADRIDTVSHOW',
+  'nav.logo': 'MADRIDISTA TV',
   'nav.home': 'Home',
   'nav.news': 'News',
   'nav.matches': 'Matches',
@@ -152,11 +152,11 @@ export const en = {
   'footer.more2': 'Shop',
   'footer.more3': 'Membership',
   'footer.more4': 'Contact',
-  'footer.copyright': '© 2026 MadridTVShow. All rights reserved.',
+  'footer.copyright': '© 2026 Madridista TV. All rights reserved.',
 };
 
 export const fa = {
-  'nav.logo': 'مادریدتیویشو',
+  'nav.logo': 'مادریدیستا تی‌وی',
   'nav.home': 'خانه',
   'nav.news': 'اخبار',
   'nav.matches': 'مسابقات',
@@ -309,5 +309,5 @@ export const fa = {
   'footer.more2': 'فروشگاه',
   'footer.more3': 'عضویت',
   'footer.more4': 'تماس',
-  'footer.copyright': '© ۲۰۲۶ مادریدتی‌وی‌شو. تمامی حقوق محفوظ است.',
+  'footer.copyright': '© ۲۰۲۶ مادریدیستا تی‌وی. تمامی حقوق محفوظ است.',
 };
